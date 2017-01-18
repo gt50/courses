@@ -1,6 +1,6 @@
 from __future__ import division,print_function
 import math, os, json, sys, re
-import cPickle as pickle
+import _pickle as pickle
 from glob import glob
 import numpy as np
 from matplotlib import pyplot as plt
@@ -250,4 +250,3 @@ class MixIterator(object):
             n0 = np.concatenate([n[0] for n in nexts])
             n1 = np.concatenate([n[1] for n in nexts])
             return (n0, n1)
-
